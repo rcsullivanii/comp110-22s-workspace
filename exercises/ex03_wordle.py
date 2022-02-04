@@ -46,7 +46,7 @@ def main() -> None:
     """The entrypoint of the program and main game loop."""
     i: int = 1
     GREEN_BOX: str = "\U0001F7E9"
-    correct_entry: str = GREEN_BOX + GREEN_BOX + GREEN_BOX + GREEN_BOX + GREEN_BOX
+    correct_entry: str = len(secret) * GREEN_BOX
     while(len(secret) + 1 >= i):
         print(f"=== Turn {i}/6 ===")
         guess: str = (emojified(input_guess(len(secret)), secret))
