@@ -1,3 +1,5 @@
+"""Designing triangular graphics by importing turtle."""
+
 from turtle import Turtle, colormode, done
 
 # from pyrsistent import b
@@ -34,12 +36,12 @@ bob.goto(-150, -129.9)
 bob.down()
 
 side_length: float = 300
-i: int = 0
+j: int = 0
 DECREASING_FACTOR = 0.99
 while (i < 100000):
     bob.forward(side_length)
     bob.left(121)
     side_length = side_length * DECREASING_FACTOR
-    i = i + 1
+    j = j + 1
 
 done()
