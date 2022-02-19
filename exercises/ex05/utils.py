@@ -4,7 +4,7 @@ __author__ = "730472431"
 
 
 def only_evens(xs: list[int]) -> list[int]:
-    """Takes a list of ints and returns only the even ints"""
+    """Takes a list of ints and returns only the even ints."""
     evens: list[int] = list()
     i: int = 0
     while (i < len(xs)):
@@ -15,7 +15,7 @@ def only_evens(xs: list[int]) -> list[int]:
 
 
 def sub(xs: list[int], a: int, b: int) -> list[int]:
-    """Takes a list of ints and returns the list form a, inclusive, to b, non inclusive"""
+    """Takes a list of ints and returns the list form a, inclusive, to b, non inclusive."""
     short: list[int] = list()
     i: int = 0
     if (a >= 0 and b <= (len(xs) - 1)):
@@ -37,15 +37,15 @@ def sub(xs: list[int], a: int, b: int) -> list[int]:
     return short
 
 
-def concate(xs: list[int], ys: list[int]) -> list[int]:
-    """Takes two lists of ints and returns a list concatenating the elements of the first list with those of the second"""
-    concate: list[int] = list()
+def concat(xs: list[int], ys: list[int]) -> list[int]:
+    """Takes two lists of ints and returns a list concatenating the elements of the first list with those of the second."""
+    concat: list[int] = list()
     i: int = 0
     j: int = 0
     while (i < len(xs)):
-        concate.append(xs[i])
+        concat.append(xs[i])
         i += 1
     while (j < len(ys)):
-        concate.append(ys[j])
+        concat.append(ys[j])
         j += 1
-    return concate
+    return concat
